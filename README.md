@@ -40,9 +40,9 @@ Note that `GOLD_DIR` defaults to `ud_dir`. Corpus names are ideally either ANNIS
 
 The publication bot requires three further repos to be cloned on an accessible path:
 
-https://github.com/CopticScriptorium/corpora - the path to existing publicly published Scriptorium data, referred to as `pub_corpora`
-https://github.com/CopticScriptorium/Coptic-NLP - the Coptic NLP pipeline referred to as `coptic_nlp_path`
-https://github.com/UniversalDependencies/UD_Coptic-Scriptorium - the repository for the Coptic Universal Dependencies treebank referred to as `ud_dir`
+  * https://github.com/CopticScriptorium/corpora - the path to existing publicly published Scriptorium data, referred to as `pub_corpora`
+  * https://github.com/CopticScriptorium/Coptic-NLP - the Coptic NLP pipeline referred to as `coptic_nlp_path`
+  * https://github.com/UniversalDependencies/UD_Coptic-Scriptorium - the repository for the Coptic Universal Dependencies treebank referred to as `ud_dir`
 
 For both repos, consider using the dev branch for the freshest data, or revert to master if unstable. The publication bot also requires access to a GitDox server, including valid credentials and a browser cookie. This allows it retrieve fresh data directly from GitDox annotations
 
