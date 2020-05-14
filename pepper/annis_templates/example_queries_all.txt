@@ -1,0 +1,156 @@
+*** sahidica.mark
+==============
+norm=/ⲡⲉϫ.*/	search for normalized words beginning with ⲡⲉϫ-
+pos="PPERI"	search for independent personal pronouns (e.g. ⲁⲛⲟⲛ)
+lang="Greek" & pos="PTC" & #1 _=_ #2	search for Greek particles
+translation=/.*power.*/	search for translations containing the word "power"
+
+*** sahidic.ot
+==========
+lang="Greek"	search for Greek words
+morph="ⲁⲧ"	search for the morpheme "ⲁⲧ"
+translation=/.*God.*/ @* title=/.*Numbers.*/	search Numbers for translations containing "God"
+pos="V" ->dep func="advcl"	search for adverbial clauses modifying verbs
+norm="ⲙⲉⲛ" & norm="ⲇⲉ" & #1 .* #2	search for "ⲙⲉⲛ" indirectly followed by "ⲇⲉ"
+
+*** shenoute.abraham
+=================
+norm="ⲛⲟⲩⲧⲉ"	search for the normalized word ⲛⲟⲩⲧⲉ
+pos="NPROP"	search for proper names
+pos="PREP" & @* msName="MONB.YA"	search for prepositions in the manuscript MONB.YA
+
+*** shenoute.a22
+================
+norm="ⲛⲟⲩⲧⲉ"	search for the normalized word ⲛⲟⲩⲧⲉ
+pos="NPROP"	search for proper names
+lang="Greek"	search for words of Greek origin
+pos="CREL" & pos="VSTAT" & #1 . #2	search for relative converters followed by stative verbs
+
+*** sahidica.1corinthians
+================
+norm=/ϫ.*/	search for normalized words beginning with ϫ-
+pos="VSTAT"	search for stative verb forms
+lang="Greek" & pos="PTC" & #1 _=_ #2	search for Greek particles
+translation=/.*God.*/	search for translations containing the word "God"
+
+*** martyrdom.victor
+==============
+lemma="ⲃⲓⲕⲧⲱⲣ"	search for the lemma ⲃⲓⲕⲧⲱⲣ
+translation=/.*[Ee]mperor.*/	search for translations containing the word "emperor"
+
+*** besa.letters
+=============
+norm="ⲛⲕⲟⲧⲕ"	search for the normalized word ⲛⲕⲟⲧⲕ
+pos="PPERI"	search for independent personal pronouns (e.g. ⲁⲛⲟⲛ)
+lang="Greek" & pos="N" & #1 _=_ #2	search for nouns of Greek origin
+hi_rend=/.*small.*/	search for small letters in the manuscript
+translation=/.*I .*/	search for translations containing the word "I"
+morph="ⲙⲛⲧ"	search for words containing the morpheme ⲙⲛⲧ
+
+*** shenoute.dirt
+===============
+norm="ⲙⲁ"	search for the normalized word ⲙⲁ
+pos="VSTAT"	search for stative verb forms
+
+*** johannes.canons
+===============
+norm="ⲙⲁ"	search for the normalized word ⲙⲁ
+pos="VSTAT"	search for stative verb forms
+pos="V" ->dep func="xcomp"	find verbs governing a non-finite clause
+
+*** apophthegmata.patrum
+====================
+norm="ⲁⲡⲁ"	search for the normalized word ⲁⲡⲁ
+pos="VSTAT"	search for stative verb forms
+lang="Greek" & pos="V" & #1 _=_ #2	search for verbs of Greek origin
+
+*** shenoute.eagerness
+==================
+norm="ⲧⲟⲡⲟⲥ"	search for the normalized word ⲧⲟⲡⲟⲥ
+morph="ⲣⲉϥ"	search for words containing the morpheme ⲣⲉϥ
+pos="FM"	search for words tagged as foreign material
+pos="CONJ" . pos="CONJ"	search for a sequence of two conjunctions
+
+*** shenoute.fox
+==============
+norm="ⲡⲟⲛⲏⲣⲟⲥ"	search for the normalized word ⲡⲟⲛⲏⲣⲟⲥ
+translation=/.*[Ee]vil.*/	search for "evil" in the translation
+pos="V" ->dep[func="nsubj"] lemma="ⲁⲛⲟⲕ"	find verbs with first person subjects
+lang="Greek"	search for words of Greek origin
+lb_n . lb_n _o_ orig & #1 _o_ #3	search for diplomatic units that contain a line break
+
+
+*** dormition.john
+===============
+lemma="ⲁⲡⲟⲥⲧⲟⲗⲟⲥ"	search for the lemma ⲁⲡⲟⲥⲧⲟⲗⲟⲥ
+norm="ⲟⲩⲁ" ->dep norm="ⲟⲩⲁ"	find constructions like ⲡⲟⲩⲁ ⲡⲟⲩⲁ
+
+*** pseudo.ephrem
+===============
+lemma="ⲙⲉⲣⲓⲧ"	search for the lemma ⲙⲉⲣⲓⲧ
+func="vocative"	find vocatives
+
+*** life.cyrus
+==========
+pos="NPROP"	search for proper names
+func="dislocated"	find dislocated subjects and objects
+
+*** life.onnophrius
+=============
+lemma="ⲛⲧⲟⲕ"	find second person pronouns
+orig_group=/ⲙ.?ⲡⲉⲓ.*/ _l_ pos="ANEGPST"	find the first person negative past spelled with epsilon-iota
+
+*** proclus.homilies
+================
+norm="ⲡⲓⲥⲧⲓⲥ"	find the word ⲡⲓⲥⲧⲓⲥ
+translation=/.*[Rr]edemption.*/	search for translations containing the word redemption
+
+*** life.phib
+==========
+lang="Greek"	search for Greek loan words
+
+*** life.aphou
+==========
+lang="Greek"	search for Greek loan words
+
+*** life.paul.tamma
+==========
+lang="Greek"	search for Greek loan words
+
+*** life.longinus.lucius
+==========
+lang="Greek"	search for Greek loan words
+
+*** doc.papyri
+==========
+figure	search for figures in the papyrus
+gap_reason="illegible"	search for illegible gaps in the text
+hi_rend=/.*superscript.*/	search for writing rendering containing superscript on the papyrus
+pb="v" _i_ pos="NPROP"	search for proper names on the verso side of the papyrus
+
+*** coptic.treebank
+=========
+pos=/V.*/ ->dep[func="dislocated"]  norm & #2 .* #1	Search for dislocated arguments preceding their verb
+pos="V" ->dep[func="nsubj"] lemma="ⲁⲛⲟⲕ" 	Find first person subjects and their verbs
+pos="V" ->dep[func="ccomp"] norm	Search for complement clauses
+norm ->dep[func="appos"] norm	Search for appositions
+
+*** shenoute.seeks
+==========
+lang="Greek"	search for Greek loan words
+
+*** shenoute.those
+==========
+lang="Greek"	search for Greek loan words
+
+*** shenoute.unknown5_1
+==========
+lang="Greek"	search for Greek loan words
+
+*** pachomius.instructions
+==========
+lang="Greek"	search for Greek loan words
+
+*** pseudo.athanasius.discourses
+==========
+lang="Greek"	search for Greek loan words
