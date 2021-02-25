@@ -32,7 +32,8 @@ def doc2file(doc):
 	doc = doc.replace("1Corinthians","1Cor").replace("MONB_","")
 	doc = re.sub("^(XH|YA|XL|GF)_",r'\1',doc)
 	doc = re.sub("([0-9])_([0-9])",r'\1-\2',doc)
-	doc = doc.replace("YA421","a22.YA421")
+	if not "a22" in doc:
+		doc = doc.replace("YA421","a22.YA421")
 	return doc
 
 def resolve_corpus(corpus):
