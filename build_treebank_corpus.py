@@ -27,6 +27,7 @@ pub_corpora["life.paul.tamma"] = "life-paul-tamma"
 pub_corpora["instructions.pachomius"] = "instructions-pachomius"
 pub_corpora["martyrdom.victor"] = "martyrdom-victor"
 pub_corpora["pseudo.athanasius.discourses"] = "pseudo-athanasius-discourses"
+pub_corpora["pseudo.flavianus"] = "pseudo-flavianus"
 
 def doc2file(doc):
 	doc = doc.replace("1Corinthians","1Cor").replace("MONB_","")

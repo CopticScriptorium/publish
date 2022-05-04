@@ -9,7 +9,7 @@ translation=/.*power.*/	search for translations containing the word "power"
 ==========
 lang="Greek"	search for Greek words
 morph="ⲁⲧ"	search for the morpheme "ⲁⲧ"
-translation=/.*God.*/ @* title=/.*Numbers.*/	search Numbers for translations containing "God"
+translation=/.*God.*/ & meta::title=/.*Numbers.*/	search Numbers for translations containing "God"
 pos="V" ->dep func="advcl"	search for adverbial clauses modifying verbs
 norm="ⲙⲉⲛ" & norm="ⲇⲉ" & #1 .* #2	search for "ⲙⲉⲛ" indirectly followed by "ⲇⲉ"
 
@@ -17,7 +17,7 @@ norm="ⲙⲉⲛ" & norm="ⲇⲉ" & #1 .* #2	search for "ⲙⲉⲛ" indirectly fo
 =================
 norm="ⲛⲟⲩⲧⲉ"	search for the normalized word ⲛⲟⲩⲧⲉ
 pos="NPROP"	search for proper names
-pos="PREP" & @* msName="MONB.YA"	search for prepositions in the manuscript MONB.YA
+pos="PREP" & meta::msName="MONB.YA"	search for prepositions in the manuscript MONB.YA
 
 *** shenoute.a22
 ================
@@ -154,3 +154,47 @@ lang="Greek"	search for Greek loan words
 *** pseudo.athanasius.discourses
 ==========
 lang="Greek"	search for Greek loan words
+
+*** pseudo.timothy
+==========
+norm="ⲁⲅⲅⲉⲗⲟⲥ"	search for the word ⲁⲅⲅⲉⲗⲟⲥ
+
+*** life.john.kalybites
+========
+norm="ϩⲓⲉⲣⲟⲩⲥⲁⲗⲏⲙ"	search for the word ϩⲓⲉⲣⲟⲩⲥⲁⲗⲏⲙ
+
+*** mysteries.john
+==============
+norm="ⲇⲓⲁⲃⲟⲗⲟⲥ"	search for the word ⲇⲓⲁⲃⲟⲗⲟⲥ
+
+*** magical.papyri
+=============
+pos="NPROP"	find proper names mentioned in magical papyri
+
+*** pseudo.flavianus
+=============
+norm="ⲇⲏⲙⲏⲧⲣⲓⲟⲥ"	find mentions of Demetrius
+
+*** pseudo.celestinus
+=============
+norm="ϩⲣⲱⲙⲏ"	find mentions of Rome
+
+*** shenoute.night
+=============
+entity="person"	find mentions of persons
+
+*** shenoute.prince
+=============
+lemma="ⲧⲕⲁⲥ"	find the lemma ⲧⲕⲁⲥ
+
+*** life.pisentius
+==========
+func="acl:relcl"	find all relative clauses
+
+*** life.eustathius.theopiste
+==========
+norm="ϣⲏⲣⲉ"	find all instances of ϣⲏⲣⲉ
+
+*** pistis.sophia
+===========
+lemma="ⲁⲓⲱⲛ"	find mentions of the lemma ⲁⲓⲱⲛ

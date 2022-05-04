@@ -30,7 +30,8 @@ def process_dir(dirname, corpus=None, test=False):
             ("\tsalt\t", "\tscriptorium\t"),
             ("\tdefault_ns\t", "\tscriptorium\t"),
         ],
-        "component": [("scriptorium\tdep", "dep\tdep")],
+        "component": [("scriptorium\tdep", "dep\tdep"),
+                      ("scriptorium\thead", "head\thead")],
     }
 
     if not dirname.endswith(os.sep):
